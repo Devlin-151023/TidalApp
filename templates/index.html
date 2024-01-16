@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    
+    <body>
+        <h1>Get Current Tidal Value</h1>
+        <form method="POST" action="/get_tidal_data">
+            <label for="station_id">Select Station ID:</label>
+            <select id="station_id" name="station_id">
+                {% for station_id in station_ids %}
+                    <option value="{{ station_id }}">{{ station_id }}</option>
+                {% endfor %}
+            </select>
+            <p>Or, specify a custom ID:</p>
+            <input type="text" id="custom_station_id" name="custom_station_id">
+            <button type="submit">Get Data</button>
+        </form>
+    </body>
+</html>

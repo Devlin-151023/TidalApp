@@ -1,0 +1,79 @@
+/* Base styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom, #2c3e50, #192a3e);
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  form {
+    background-color: rgba(44, 62, 80, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, select {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background: linear-gradient(to right, #3498db, #9b59b6);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #2980b9, #8e44ad);
+  }
+  
+  /* Tidal value display */
+  .result {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .result h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 56px;
+    margin-bottom: 5px;
+    animation: shimmer 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+  }
+  
+  /* Additional touches (optional) */
+  /* Wave animation, hover effects, microinteractions */
+  
